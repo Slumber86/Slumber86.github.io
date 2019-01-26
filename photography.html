@@ -14,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Quattrocento" rel="stylesheet"> 
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133285123-1"></script> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133285123-1"></script>
 
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -31,17 +31,7 @@
 <body class="is-preload">
 
 	<!-- Wrapper -->
-	<div id="wrapper" class="fade-in">
-
-		<!-- Intro -->
-		<div id="intro">
-			<h1>Agostino<br />
-				Marzotta</h1>
-			<p>Software Engineer ad Photographer</p>
-			<ul class="actions">
-				<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
-		</div>
+	<div id="wrapper">
 
 		<!-- Header -->
 		<header id="header">
@@ -51,8 +41,8 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li class="active"><a href="index.html#header">About me</a></li>
-				<li><a href="photography.html">Photography</a></li>
+				<li ><a href="index.html#header">About me</a></li>
+				<li class="active"><a href="photography.html">Photography</a></li>
 				<li><a href="cv.html">Curriculum Vitae</a></li>
 			</ul>
 			<ul class="icons">
@@ -67,19 +57,19 @@
 
 		<!-- Main -->
 		<div id="main">
-			<!-- Featured Post -->
-			<article class="post featured">
-				<header class="major">
-					<h2>Shaping Beauty</h2>
-					<p>From high-performance front-ends, to scalable back-ends my work left its mark on the most important banking and insurance istitutions in Italy.</p>
-					<p>My technical mastery and estetic vision also applied to photography and music production.</p>
-				</header>
-				<a href="#" class="image main"><img src="images/keyboard.jpg" alt="" /></a>
-				<ul class="actions special">
-					<li><a href="/photography.html" class="button large">My work as photographer</a></li>
-					<li><a href="/cv.html" class="button large">Read my CV</a></li>
-				</ul>
-			</article>
+				<iframe id="portfolio" class="fill" src="/gallery/index.html"></iframe>
+				<article class="post featured">
+				<h3>Check out the latest shots</h3>
+				<ul class="actions fit">
+						<li>
+							<a href="https://500px.com/slumber86" class="button primary fit">on 500px</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/slumber86/" class="button primary fit">on Instagram</a>
+						</li>
+					</ul>
+					</article>
+
 		</div>
 
 		<!-- Footer -->
@@ -94,12 +84,12 @@
 				<section>
 					<h3>Social</h3>
 					<ul class="icons alt">
-							<li><a href="https://twitter.com/Slumber86" class="icon style2 fa-twitter" target="_new"><span class="label">Twitter</span></a></li>
-							<li><a href="https://500px.com/slumber86" class="icon style2 fa-500px" target="_new"><span class="label">500px</span></a></li>
-							<li><a href="https://www.instagram.com/slumber86/" class="icon style2 fa-instagram" target="_new"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/Slumber86" class="icon style2 fa-github" target="_new"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/agostino-marzotta-6118a729/" class="icon style2 fa-linkedin" target="_new"><span
-									 class="label">LinkedIn</span></a></li>
+						<li><a href="https://twitter.com/Slumber86" class="icon style2 fa-twitter" target="_new"><span class="label">Twitter</span></a></li>
+						<li><a href="https://500px.com/slumber86" class="icon style2 fa-500px" target="_new"><span class="label">500px</span></a></li>
+						<li><a href="https://www.instagram.com/slumber86/" class="icon style2 fa-instagram" target="_new"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/Slumber86" class="icon style2 fa-github" target="_new"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/agostino-marzotta-6118a729/" class="icon style2 fa-linkedin" target="_new"><span
+								 class="label">LinkedIn</span></a></li>
 					</ul>
 				</section>
 			</section>
@@ -122,7 +112,9 @@
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
+	<script src="assets/js/iframeResizer.min.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>iFrameResize({log:true}, '#portfolio')</script>
 
 </body>
 
